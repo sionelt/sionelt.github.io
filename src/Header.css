@@ -34,6 +34,7 @@ a {color:#fff;}
    border: 2px solid #fff;
    border-radius: 60%;
    background-color: #fff;
+   transition: all 0.3s ease-in-out;
 }
 
 .icon_nav_item:hover {
@@ -41,16 +42,26 @@ a {color:#fff;}
    color: #fff !important;
 }
 
-.link_to_works {
+button.link_to_works {
+   display: flex;
+   align-items: center;
+   margin-top: 1rem;
+   padding: 0.5rem 1rem;
    text-align: center;
-}
-
-.link_to_works>a>.fa-angle-down {
+   color: #65379b;
+   background-color: #fff;
+   border: 3px solid #fff;
    transition: all 0.3s ease-in-out;
 }
 
-.link_to_works>a>.fa-angle-down:hover {
-   transform: scale(2,2);
+.link_to_works>.fa-angle-right {
+   padding: 0 0.2rem;
+}
+
+.link_to_works:hover {
+   color: #fff;
+   background-color: transparent;
+   border-radius: 2rem;
 }
 
 @media all and (max-width:500px) {

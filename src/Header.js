@@ -19,14 +19,13 @@ const Header = () => (
       <ul className="icon_nav">
          {ICONS_NAV.map((nav)=>(
             <li key={nav.icon}>
-               <a href={nav.url}><i className={`${nav.icon} fa-2x icon_nav_item`} style={{color: nav.color, padding: nav.size }}/></a>
+               <a href={nav.url}><i className={`${nav.icon} fa-lg icon_nav_item`} style={{color: nav.color, padding: nav.size }}/></a>
             </li>
          ))}                
       </ul>
-      <div className="link_to_works">
-         <h3>See My Works</h3>
-         <a href="#"><i className="fas fa-angle-down fa-2x"></i></a>
-      </div>
+      <button className="link_to_works">
+         <h3>See My Works</h3><i className="fas fa-angle-right fa-lg"></i>
+      </button>
    </div>
 )
 
