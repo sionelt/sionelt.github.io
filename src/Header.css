@@ -2,6 +2,8 @@ a {
 	color: #fff;
 }
 
+/*---------------------*/
+
 .header_container {
 	display: flex;
 	flex-direction: column;
@@ -24,6 +26,8 @@ a {
 	opacity: 1;
 }
 
+/*---------------------*/
+
 .header_subheading_center {
 	padding: 1rem 10rem;
 	text-align: center;
@@ -33,6 +37,8 @@ a {
 	padding: 1rem 0;
 	text-align: left;
 }
+
+/*---------------------*/
 
 .divider {
 	background-color: #fff;
@@ -47,6 +53,8 @@ a {
 	width: 40%;
 	text-align: left;
 }
+
+/*---------------------*/
 
 .icons_nav {
 	display: flex;
@@ -77,6 +85,8 @@ a {
 	color: #fff !important;
 }
 
+/*---------------------*/
+
 button.link_to_works {
 	display: flex;
 	align-items: center;
@@ -100,6 +110,9 @@ button.link_to_works {
 	border-radius: 2rem;
 }
 
+/*---------------------*/
+
+/*- mobile screen size -*/
 @media all and (max-width: 500px) {
 	.header_subheading_center {
 		padding: 0.5rem 3rem;
