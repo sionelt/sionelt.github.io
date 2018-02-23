@@ -4,7 +4,13 @@ a {
 
 /*---------------------*/
 
+.fixed_wrapper {
+	position: relative;
+	width: 30%;
+}
+
 .header_container {
+	position: fixed;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

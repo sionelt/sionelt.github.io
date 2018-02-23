@@ -51,7 +51,7 @@ class App extends Component {
 export default App
 
 // TODO:
-// --- Create works pages for projects showcase.
-// --- Use semantic's Card component for project's showcase.
+// --- make header wrapper dynamic width
+// --- hide overflow in full screen
 // --- Animate with AOS animation.
 // --- hook up with firebase DB and storage.

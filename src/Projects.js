@@ -2,7 +2,7 @@ import React from 'react'
 import './Projects.css'
 
 const Projects = ({ isViewWorks }) => (
-	<div className="projects_container" style={{ width: isViewWorks ? '70%' : '0' }}>
+	<div className="projects_container" style={{ display: isViewWorks ? 'block' : 'none' }}>
 		<ul className="projects_list">
 			{PROJECTS_DETAILS.map(project => (
 				<li key={project.name}>
@@ -34,6 +34,33 @@ const Projects = ({ isViewWorks }) => (
 export default Projects
 
 const PROJECTS_DETAILS = [
+	{
+		image: './assets/calculatorApp.png',
+		name: 'Calculator App',
+		stack: 'Reactjs, AOS Animation, Firebase Realtime Database',
+		description:
+			'A cloned of the iphone default calculator app but with addition features; CE button, scrollable top display for all entries and navigation arrows for top display.',
+		repo: '#',
+		demo: '#'
+	},
+	{
+		image: './assets/calculatorApp.png',
+		name: 'Calculator App',
+		stack: 'Reactjs, AOS Animation, Firebase Realtime Database',
+		description:
+			'A cloned of the iphone default calculator app but with addition features; CE button, scrollable top display for all entries and navigation arrows for top display.',
+		repo: '#',
+		demo: '#'
+	},
+	{
+		image: './assets/calculatorApp.png',
+		name: 'Calculator App',
+		stack: 'Reactjs, AOS Animation, Firebase Realtime Database',
+		description:
+			'A cloned of the iphone default calculator app but with addition features; CE button, scrollable top display for all entries and navigation arrows for top display.',
+		repo: '#',
+		demo: '#'
+	},
 	{
 		image: './assets/calculatorApp.png',
 		name: 'Calculator App',
