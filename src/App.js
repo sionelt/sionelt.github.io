@@ -21,13 +21,13 @@ class App extends Component {
 		})
 
 		this.fadeElements.forEach(each => (each.style.opacity = 0))
-
 		setTimeout(() => {
 			this.fadeElements.forEach(each => (each.style.opacity = 1))
 		}, 500)
 	}
 
 	componentDidMount() {
+		// DOM references
 		this.fadeElements = document.querySelectorAll('.fade')
 	}
 
@@ -45,3 +45,9 @@ class App extends Component {
 }
 
 export default App
+
+// TODO:
+// --- Create works pages for projects showcase.
+// --- Use semantic's Card component for project's showcase.
+// --- Animate with AOS animation.
+// --- hook up with firebase DB and storage.
