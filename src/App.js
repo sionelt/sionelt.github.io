@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from './Header'
+import Projects from './Projects'
 import './App.css'
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
 					isViewWorks={this.state.isViewWorks}
 					viewWorksText={this.state.viewWorksText}
 				/>
+				<Projects />
 			</div>
 		)
 	}
