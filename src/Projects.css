@@ -1,4 +1,10 @@
 .projects_container {
+	transition: all 0.5s ease-in-out;
+   overflow-x: hidden;
+   opacity: 0;
+}
+
+.projects_list {
 	padding: 2rem;
 }
 
@@ -6,45 +12,43 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-   width: 20rem;
-   border-radius: 0.2rem;
-   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-   overflow: auto;
+	width: 20rem;
+	border-radius: 0.2rem;
+	box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
 }
 
 .project_img_holder {
 	width: 100%;
-   height: 14rem;
-   margin: 0.01rem;
-   background-color: #7164d348;   
+	height: 14rem;
+	background-color: #7164d348;
 	background-position: 50% -5%;
 	background-repeat: no-repeat;
 	background-size: 80%;
 }
 
 .project_content {
-   padding: 1rem 1.3rem 1.5rem;
+	padding: 1rem 1.3rem 1.5rem;
 }
 
-.project_content>h4 {
-   color: #6457c6;
+.project_content > h4 {
+	color: #6457c6;
 }
 
-.project_content>h5 {
-   color: #6457c6;
+.project_content > h5 {
+	color: #6457c6;
 }
 
-.project_btn_group>button {
-   padding: 0.5rem 1rem;
-   margin-right: 1rem;
-   color: #fff;
-   background-color: #65379b;
-   border: 2px solid #65379b;
-   transition: all 0.3s ease-in-out
+.project_btn_group > button {
+	padding: 0.5rem 1rem;
+	margin-right: 1rem;
+	color: #fff;
+	background-color: #6457c6;
+	border: 2px solid #6457c6;
+	transition: all 0.3s ease-in-out;
 }
 
-.project_btn_group>button:hover {
-   color: #65379b;
-   background-color: #fff;
-   border-radius: 2rem;
+.project_btn_group > button:hover {
+	color: #6457c6;
+	background-color: #fff;
+	border-radius: 2rem;
 }
