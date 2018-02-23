@@ -1,0 +1,128 @@
+a {
+	color: #fff;
+}
+
+/*---------------------*/
+
+.header_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	background-image: linear-gradient(-225deg, #65379b 0%, #886aea 53%, #6457c6 100%);
+	color: #fff;
+	transition: all 0.5s ease-in-out;
+}
+
+.header_container_center {
+	align-items: center;
+	width: 100%;
+}
+
+.header_container_left {
+	align-items: flex-start;
+	padding: 0 2rem;
+	width: 30%;
+	opacity: 1;
+}
+
+/*---------------------*/
+
+.header_subheading_center {
+	padding: 1rem 10rem;
+	text-align: center;
+}
+
+.header_subheading_left {
+	padding: 1rem 0;
+	text-align: left;
+}
+
+/*---------------------*/
+
+.divider {
+	background-color: #fff;
+	height: 1px;
+}
+
+.divider_center {
+	width: 5%;
+}
+
+.divider_left {
+	width: 40%;
+	text-align: left;
+}
+
+/*---------------------*/
+
+.icons_nav {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.icons_nav_center {
+	align-items: center;
+	padding: 1rem;
+}
+
+.icons_nav_left {
+	align-items: flex-start;
+	padding: 1rem 0;
+}
+
+.icons_nav_item {
+	margin: 0.5rem;
+	border: 2px solid #fff;
+	border-radius: 60%;
+	background-color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.icons_nav_item:hover {
+	background-color: transparent;
+	color: #fff !important;
+}
+
+/*---------------------*/
+
+button.link_to_works {
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+	text-align: center;
+	color: #65379b;
+	background-color: #fff;
+	border: 3px solid #fff;
+	transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.link_to_works > .fa-angle-right {
+	padding: 0 0.2rem;
+}
+
+.link_to_works:hover {
+	color: #fff;
+	background-color: transparent;
+	border-radius: 2rem;
+}
+
+/*---------------------*/
+
+/*- mobile screen size -*/
+@media all and (max-width: 500px) {
+	.header_subheading_center {
+		padding: 0.5rem 3rem;
+	}
+	.icons_nav {
+		padding: 1rem 3rem;
+	}
+}
+
+/*TODO:
+   -- adjust slides in mobile from slide left to up?
+   -- sticky nav for icons nav on mobile
+*/
