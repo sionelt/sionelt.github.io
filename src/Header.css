@@ -91,6 +91,18 @@ a {
 	transition: all 0.3s ease-in-out;
 }
 
+.icons_nav_desktop {
+	display: none;
+}
+
+.icons_nav_mobile {
+	background-image: linear-gradient(-225deg, #65379b 0%, #886aea 53%, #6457c6 100%);
+}
+
+.icons_nav.icons_nav_mobile {
+	padding: 0;
+}
+
 .icons_nav_item:hover {
 	background-color: transparent;
 	color: #fff !important;
@@ -130,8 +142,18 @@ button.link_to_works {
 	}
 }
 
-/*- ipad pro screen size -*/
+/*- ipad screen size -*/
 @media all and (max-width: 768px) {
+	.header_fixed_wrapper_left {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		min-width: 0;
+		z-index: 2;
+	}
+	.header_container_left {
+		display: none;
+	}
 }
 
 /*- mobile screen size -*/
@@ -140,11 +162,6 @@ button.link_to_works {
 		padding: 0rem 2rem;
 	}
 	.icons_nav {
-		padding: 1rem 3rem;
+		padding: 1rem 0;
 	}
 }
-
-/*TODO:
-   -- adjust slides in mobile from slide left to up?
-   -- sticky nav for icons nav on mobile
-*/

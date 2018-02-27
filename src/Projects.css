@@ -2,6 +2,7 @@
 	width: 65%;
 	opacity: 0;
 	transition: all 0.5s ease-in-out;
+	z-index: 1;
 }
 
 .projects_list {
@@ -55,4 +56,28 @@
 	color: #6457c6;
 	background-color: #fff;
 	border-radius: 2rem;
+}
+
+/*---------------------*/
+
+/*- ipad screen size -*/
+@media all and (max-width: 768px) {
+	.projects_container {
+      width: 100%;
+      padding-bottom: 75px;
+	}
+	.projects_list {
+		justify-content: space-between;
+	}
+	.project_card {
+		width: 21rem;
+		margin-bottom: 2rem;
+	}
+}
+
+/*- mobile screen size -*/
+@media all and (max-width: 500px) {
+	.project_card {
+		width: 100%;
+	}
 }
