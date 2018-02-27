@@ -1,7 +1,8 @@
 .projects_container {
-	width: 65vw;
+	width: 65%;
 	opacity: 0;
 	transition: all 0.5s ease-in-out;
+	z-index: 1;
 }
 
 .projects_list {
@@ -15,7 +16,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-   margin-bottom: 3rem;
+	margin-bottom: 3rem;
 	width: 22rem;
 	border-radius: 0.2rem;
 	box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
@@ -48,11 +49,36 @@
 	color: #fff;
 	background-color: #6457c6;
 	border: 2px solid #6457c6;
-	transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   cursor: pointer;
 }
 
 .project_btn_group > button:hover {
 	color: #6457c6;
 	background-color: #fff;
 	border-radius: 2rem;
+}
+
+/*---------------------*/
+
+/*- ipad screen size -*/
+@media all and (max-width: 768px) {
+	.projects_container {
+      width: 100%;
+      padding-bottom: 75px;
+	}
+	.projects_list {
+		justify-content: space-between;
+	}
+	.project_card {
+		width: 21rem;
+		margin-bottom: 2rem;
+	}
+}
+
+/*- mobile screen size -*/
+@media all and (max-width: 500px) {
+	.project_card {
+		width: 100%;
+	}
 }
