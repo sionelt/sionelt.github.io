@@ -133,6 +133,21 @@ button.link_to_works {
 	border-radius: 2rem;
 }
 
+.return_arrow{
+   display: inline-block;
+   margin: 1rem;
+   padding: 1.5rem;
+   color: #65379b;
+   background-color: #fff;
+   border-radius: 60%;
+   box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+}
+
+.return_arrow_desktop {
+   display: none;
+}
+
+
 /*---------------------*/
 
 /*- ipad pro screen size -*/

@@ -54,7 +54,7 @@ class App extends Component {
 export default App
 
 // TODO:
-// --- make header wrapper dynamic width
-// --- hide overflow in full screen
+// --- return arrow to header in mobile/tablet
+// --- 
 // --- Animate with AOS animation.
 // --- hook up with firebase DB and storage.

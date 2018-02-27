@@ -18,6 +18,12 @@ const IconsNav = ({ styles }) => (
 
 const Header = ({ onClick, isViewWorks, viewWorksText }) => (
 	<div className={isViewWorks ? 'header_fixed_wrapper_left' : 'header_fixed_wrapper_center'}>
+      <div
+         onClick={onClick}   
+			className={`return_arrow ${isViewWorks ? 'return_arrow_mobile' : 'return_arrow_desktop'}`}
+		>
+			<i className="fas fa-arrow-left fa-lg" />
+		</div>
 		<IconsNav styles={`icons_nav ${isViewWorks ? 'icons_nav_mobile' : 'icons_nav_desktop'}`} />
 		<div
 			className={`header_container ${
