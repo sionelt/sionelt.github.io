@@ -22,11 +22,13 @@ class App extends Component {
 		})
 		this.projectsContainer.style.opacity = 0
 		this.iconsNavMobile.style.opacity = 0
+		this.returnArrowMobile.style.opacity = 0
 		this.fadeElements.forEach(each => (each.style.opacity = 0))
 		setTimeout(() => {
 			this.fadeElements.forEach(each => (each.style.opacity = 1))
 			this.projectsContainer.style.opacity = 1
 			this.iconsNavMobile.style.opacity = 1
+			this.returnArrowMobile.style.opacity = 1
 		}, 500)
 	}
 
@@ -35,6 +37,7 @@ class App extends Component {
 		this.fadeElements = document.querySelectorAll('.fade')
 		this.projectsContainer = document.querySelector('.projects_container')
 		this.iconsNavMobile = document.querySelector('.icons_nav')
+		this.returnArrowMobile = document.querySelector('.return_arrow')
 	}
 
 	render() {
@@ -55,6 +58,6 @@ export default App
 
 // TODO:
 // --- return arrow to header in mobile/tablet
-// --- 
+// ---
 // --- Animate with AOS animation.
 // --- hook up with firebase DB and storage.
