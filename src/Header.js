@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 
 const Header = ({ onClick, isViewWorks, viewWorksText }) => (
-	<div className="fixed_wrapper">
+	<div className={isViewWorks ? 'header_fixed_wrapper_left' : 'header_fixed_wrapper_center'}>
 		<div
 			className={`header_container ${
 				isViewWorks ? 'header_container_left' : 'header_container_center'
@@ -10,7 +10,7 @@ const Header = ({ onClick, isViewWorks, viewWorksText }) => (
 		>
 			<div className="fade">
 				<h4>Malo lelei (hello), I'm &mdash;</h4>
-				<h1>Sione Tafegnatoto</h1>
+				<h1>Sione Tafengatoto</h1>
 				<h4 style={{ textAlign: 'right' }}>&mdash; front-end developer</h4>
 			</div>
 			<div
@@ -19,6 +19,7 @@ const Header = ({ onClick, isViewWorks, viewWorksText }) => (
 				}`}
 			>
 				<p>
+					I'm originally from Tonga, living in Utah. I'm currently a junior CS student at BYU. 
 					I hope to make the world a better place with coding. <br />
 					Current stack of expertise: <br />
 					HTML5, CSS3, JS, jQuery, Reactjs, Redux, Nodejs, Expressjs
