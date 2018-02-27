@@ -9,7 +9,7 @@ const Header = ({ onClick, isViewWorks, viewWorksText }) => (
 			}`}
 		>
 			<div className="fade">
-				<h4>Malo lelei (hello), I'm &mdash;</h4>
+				<h4>Malo lelei (hi), I'm &mdash;</h4>
 				<h1>Sione Tafengatoto</h1>
 				<h4 style={{ textAlign: 'right' }}>&mdash; front-end developer</h4>
 			</div>
@@ -19,10 +19,13 @@ const Header = ({ onClick, isViewWorks, viewWorksText }) => (
 				}`}
 			>
 				<p>
-					I'm originally from Tonga, living in Utah. I'm currently a junior CS student at BYU. 
-					I hope to make the world a better place with coding. <br />
-					Current stack of expertise: <br />
-					HTML5, CSS3, JS, jQuery, Reactjs, Redux, Nodejs, Expressjs
+					I'm originally from Tonga, living in Provo, UT. I'm currently a jr front-end developer at Whirlwind Software and a junior at BYU Provo.&nbsp;
+					<mark> I'm always open for new and exciting opportunities! </mark>
+					&nbsp;Check out my works. <br />
+               <span style={{color: 'yellow'}}>
+						Current stack of expertise: <br />
+						HTML5, CSS3, JS, jQuery, Reactjs, Redux, Nodejs, Expressjs
+					</span>
 				</p>
 			</div>
 			<hr

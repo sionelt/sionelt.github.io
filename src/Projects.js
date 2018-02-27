@@ -37,7 +37,7 @@ const PROJECTS_DETAILS = [
 	{
 		image: './assets/calculatorApp.png',
 		name: 'Calculator App',
-		stack: 'Reactjs, AOS Animation, Firebase Realtime Database',
+		stack: 'Reactjs, AOS Animation',
 		description:
 			'A cloned of the iphone default calculator app but with addition features; CE button, scrollable top display for all entries and navigation arrows for top display.',
 		repo: '#',
@@ -46,7 +46,7 @@ const PROJECTS_DETAILS = [
 	{
 		image: './assets/calculatorApp.png',
 		name: 'Calculator App',
-		stack: 'Reactjs, AOS Animation, Firebase Realtime Database',
+		stack: 'Reactjs, AOS Animation, Firebase',
 		description:
 			'A cloned of the iphone default calculator app but with addition features; CE button, scrollable top display for all entries and navigation arrows for top display.',
 		repo: '#',
@@ -55,7 +55,7 @@ const PROJECTS_DETAILS = [
 	{
 		image: './assets/calculatorApp.png',
 		name: 'Calculator App',
-		stack: 'Reactjs, AOS Animation, Firebase Realtime Database',
+		stack: 'Reactjs, AOS Animation, Firebase',
 		description:
 			'A cloned of the iphone default calculator app but with addition features; CE button, scrollable top display for all entries and navigation arrows for top display.',
 		repo: '#',
@@ -64,7 +64,7 @@ const PROJECTS_DETAILS = [
 	{
 		image: './assets/calculatorApp.png',
 		name: 'Calculator App',
-		stack: 'Reactjs, AOS Animation, Firebase Realtime Database',
+		stack: 'Reactjs, AOS Animation, Firebase',
 		description:
 			'A cloned of the iphone default calculator app but with addition features; CE button, scrollable top display for all entries and navigation arrows for top display.',
 		repo: '#',
