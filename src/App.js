@@ -57,7 +57,7 @@ class App extends Component {
 export default App
 
 // TODO:
-// --- return arrow to header in mobile/tablet
-// ---
-// --- Animate with AOS animation.
+// --- zoom out active or selected project card.
 // --- hook up with firebase DB and storage.
+// --- add projects to it.
+// --- deploy with github pages.
