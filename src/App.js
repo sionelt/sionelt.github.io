@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from './Header'
 import Projects from './Projects'
 import './App.css'
+import * as firebase from 'firebase'
 
 class App extends Component {
 	constructor() {
@@ -9,7 +10,9 @@ class App extends Component {
 
 		this.state = {
 			isViewWorks: false,
-			viewWorksText: 'See My Works'
+			viewWorksText: 'See My Works',
+			homeData: {},
+			projectsData: []
 		}
 
 		this.handleViewWorks = this.handleViewWorks.bind(this)
@@ -38,17 +41,34 @@ class App extends Component {
 		this.projectsContainer = document.querySelector('.projects_container')
 		this.iconsNavMobile = document.querySelector('.icons_nav')
 		this.returnArrowMobile = document.querySelector('.return_arrow')
+
+		// data reads from firebase DB
+		firebase
+			.database()
+			.ref('/')
+			.once('value')
+			.then(snap => {
+				this.setState({
+					homeData: snap.val().home,
+					projectsData: snap.val().projects
+				})
+				console.log(snap.val())
+			})
 	}
 
 	render() {
 		return (
 			<div className="app_container">
 				<Header
+					header={this.state.homeData}
 					onClick={this.handleViewWorks}
 					isViewWorks={this.state.isViewWorks}
 					viewWorksText={this.state.viewWorksText}
 				/>
-				<Projects isViewWorks={this.state.isViewWorks} />
+            <Projects
+               projects={this.state.projectsData}
+               isViewWorks={this.state.isViewWorks}
+            />
 			</div>
 		)
 	}
