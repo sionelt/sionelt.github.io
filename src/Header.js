@@ -16,7 +16,7 @@ const IconsNav = ({ styles }) => (
 	</ul>
 )
 
-const Header = ({ onClick, isViewWorks, viewWorksText }) => (
+const Header = ({ header, onClick, isViewWorks, viewWorksText }) => (
 	<div className={isViewWorks ? 'header_fixed_wrapper_left' : 'header_fixed_wrapper_center'}>
 		<div
 			onClick={onClick}
@@ -35,7 +35,7 @@ const Header = ({ onClick, isViewWorks, viewWorksText }) => (
 			<div className="fade">
 				<h4>Malo lelei (hi), I'm &mdash;</h4>
 				<h1>Sione Tafengatoto</h1>
-				<h4 style={{ textAlign: 'right' }}>&mdash; front-end developer</h4>
+				<h4 style={{ textAlign: 'right' }}>&mdash; {header.title}</h4>
 			</div>
 			<div
 				className={`fade ${
@@ -43,13 +43,12 @@ const Header = ({ onClick, isViewWorks, viewWorksText }) => (
 				}`}
 			>
 				<p>
-					I'm originally from Tonga, living in Provo, UT. I'm currently a jr front-end
-					developer at Whirlwind Software and a junior at BYU Provo.&nbsp;
-					<mark> I'm always open for new and exciting opportunities! </mark>
+					I'm originally from Tonga, living in Provo, UT. {header.currentJob} and a junior at BYU Provo.&nbsp;
+					<mark> {header.highlight} </mark>
 					&nbsp;Check out my works. <br />
 					<span style={{ color: 'yellow' }}>
 						Current stack of expertise: <br />
-						HTML5, CSS3, JS, jQuery, Reactjs, Redux, Nodejs, Expressjs
+						{header.stacks}
 					</span>
 				</p>
 			</div>
