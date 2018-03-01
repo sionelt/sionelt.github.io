@@ -43,7 +43,8 @@
 	color: #6457c6;
 }
 
-.project_btn_group > button {
+.project_btn_group > a {
+   display: inline-block;
 	padding: 0.5rem 1rem;
 	margin-right: 1rem;
 	color: #fff;
@@ -53,7 +54,7 @@
    cursor: pointer;
 }
 
-.project_btn_group > button:hover {
+.project_btn_group > a:hover {
 	color: #6457c6;
 	background-color: #fff;
 	border-radius: 2rem;
