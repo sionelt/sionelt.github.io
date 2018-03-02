@@ -2,3 +2,15 @@
    display: flex;
    overflow: hidden; 
 }
+
+.pending_container {
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;   
+   background-color: #6457c6ad;
+   z-index: 100;
+}
