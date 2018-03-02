@@ -9,7 +9,7 @@ const Projects = ({ projects, isViewWorks }) => (
 					<div className="project_card">
 						<div
 							className="project_img_holder"
-							style={{ backgroundImage: `url(${require(`${project.image}`)})` }}
+							style={{ backgroundImage: `url(${project.image})` }}
 						/>
 						<div className="project_content">
 							<h4>{project.name}</h4>
