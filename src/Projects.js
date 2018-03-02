@@ -14,14 +14,16 @@ const Projects = ({ projects, isViewWorks }) => (
 						<div className="project_content">
 							<h4>{project.name}</h4>
 							<h5>{project.stackUsed}</h5>
-							<p>{project.description}</p>
-							<div className="project_btn_group">
-								<a href={project.repo} className="project_repo">
-									<i className="fab fa-github fa-lg" /> Code
-								</a>
-								<a href={project.demo} className="project_repo">
-									<i className="fas fa-play-circle fa-lg" /> Demo
-								</a>
+							<div className="project_detail">
+								<p>{project.description}</p>
+								<div className="project_btn_group">
+									<a href={project.repo} className="project_repo">
+										<i className="fab fa-github fa-lg" /> Code
+									</a>
+									<a href={project.demo} className="project_repo">
+										<i className="fas fa-play-circle fa-lg" /> Demo
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -32,4 +34,3 @@ const Projects = ({ projects, isViewWorks }) => (
 )
 
 export default Projects
-
