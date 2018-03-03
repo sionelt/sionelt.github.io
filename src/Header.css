@@ -127,7 +127,8 @@ button.link_to_works {
 }
 
 .return_arrow {
-	display: none;
+   display: none;
+   cursor: pointer;
 }
 
 /*---------------------*/
